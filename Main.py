@@ -16,6 +16,7 @@ def start():
                 book = input("Enter the book name : ")
                 auth = input("Enter the author name : ")
                 rate = int(input("Enter the rate : "))
+                print("Book accepted .. ")
                 query = "insert into library values('" + book + "', '" + auth + "', " + str(rate) + ");"
                 cursor.execute(query);
                 conn.commit()
